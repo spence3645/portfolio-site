@@ -1,0 +1,31 @@
+---
+const base = import.meta.env.BASE_URL;
+
+const navLinks = [
+  { label: 'About',    href: `${base}#about`   },
+  { label: 'Skills',   href: `${base}#skills`  },
+  { label: 'Software', href: `${base}software/` },
+  { label: 'Game Dev', href: `${base}gamedev/`  },
+  { label: 'Contact',  href: `${base}#contact`  },
+];
+---
+
+<header class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur border-b border-gray-800">
+  <nav class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+    <a href={base} class="font-mono font-medium text-accent-400 hover:text-accent-300 transition-colors">
+      spence3645
+    </a>
+    <ul class="flex items-center gap-1">
+      {navLinks.map(({ label, href }) => (
+        <li>
+          <a
+            href={href}
+            class="px-3 py-1.5 rounded-md text-sm text-gray-300 hover:text-white hover:bg-gray-800 transition-colors"
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>

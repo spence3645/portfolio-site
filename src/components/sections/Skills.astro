@@ -1,0 +1,24 @@
+---
+import SkillBadge from '../ui/SkillBadge.astro';
+import { skillCategories } from '../../data/skills';
+---
+
+<section id="skills" class="bg-gray-900/50 py-24">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-white mb-2">Skills</h2>
+    <p class="text-gray-400 mb-12">Technologies and tools I work with.</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {skillCategories.map(({ name, skills }) => (
+        <div>
+          <h3 class="text-xs font-mono uppercase tracking-widest text-accent-400 mb-4">{name}</h3>
+          <div class="flex flex-col gap-2">
+            {skills.map((skill) => (
+              <SkillBadge name={skill} />
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

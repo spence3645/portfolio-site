@@ -1,0 +1,57 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+
+<section id="about" class="max-w-6xl mx-auto px-4 py-24">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Text -->
+    <div>
+      <p class="text-accent-400 font-mono text-sm mb-3">Hello, I'm</p>
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+        Matthew Spencer
+      </h1>
+      <p class="text-xl text-gray-400 mb-6">Software Developer & Game Dev Enthusiast</p>
+      <p class="text-gray-300 leading-relaxed mb-8">
+        I build things for the web and for games. Passionate about clean code,
+        interesting rendering problems, and shipping projects that actually work.
+        Currently looking for new opportunities.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a
+          href={`${base}software/`}
+          class="px-5 py-2.5 rounded-lg bg-accent-600 hover:bg-accent-500 text-white font-medium transition-colors"
+        >
+          View Software Projects
+        </a>
+        <a
+          href={`${base}#contact`}
+          class="px-5 py-2.5 rounded-lg border border-gray-700 hover:border-accent-600 text-gray-300 hover:text-white font-medium transition-colors"
+        >
+          Get in Touch
+        </a>
+      </div>
+    </div>
+
+    <!-- Decorative code block -->
+    <div class="hidden md:block">
+      <div class="rounded-xl border border-gray-800 bg-gray-900 overflow-hidden font-mono text-sm">
+        <div class="flex items-center gap-1.5 px-4 py-3 border-b border-gray-800 bg-gray-950">
+          <span class="w-3 h-3 rounded-full bg-red-500/70"></span>
+          <span class="w-3 h-3 rounded-full bg-yellow-500/70"></span>
+          <span class="w-3 h-3 rounded-full bg-green-500/70"></span>
+          <span class="ml-2 text-gray-500 text-xs">about.ts</span>
+        </div>
+        <pre class="p-4 text-gray-300 overflow-x-auto leading-relaxed"><code><span class="text-accent-400">const</span> <span class="text-white">me</span> = <span class="text-yellow-400">&#123;</span>
+  name:     <span class="text-green-400">"Matthew Spencer"</span>,
+  role:     <span class="text-green-400">"Software Developer"</span>,
+  hobbies:  <span class="text-yellow-400">[</span>
+    <span class="text-green-400">"game dev"</span>,
+    <span class="text-green-400">"rendering"</span>,
+    <span class="text-green-400">"open source"</span>,
+  <span class="text-yellow-400">]</span>,
+  available: <span class="text-purple-400">true</span>,
+<span class="text-yellow-400">}</span>;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
