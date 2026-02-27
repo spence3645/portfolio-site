@@ -8,7 +8,7 @@ export const softwareProjects: Project[] = [
     description:
       'This is a placeholder description for your software project. ' +
       'Update this file at src/data/software-projects.ts to add your real projects.',
-    previewGif: '/media/software/example-app.gif',
+    previewGif: 'media/software/example-app.gif',
     techStack: ['TypeScript', 'React', 'Node.js'],
     repoUrl: 'https://github.com/spence3645',
     order: 1,
