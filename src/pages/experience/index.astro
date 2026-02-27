@@ -1,12 +1,64 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const jobs = [
+  {
+    company: 'Company Name',
+    title: 'Job Title',
+    range: 'Month Year – Present',
+    description: 'Brief overview of your role and the work you did here.',
+    highlights: [
+      'Key accomplishment or responsibility.',
+      'Another highlight or impact you made.',
+      'A third bullet point about your work.',
+    ],
+  },
+  {
+    company: 'Previous Company',
+    title: 'Previous Role',
+    range: 'Month Year – Month Year',
+    description: 'Brief overview of this position and what you contributed.',
+    highlights: [
+      'Notable achievement or project.',
+      'Responsibility or skill you developed.',
+    ],
+  },
+];
 ---
 
-<BaseLayout title="Experience — Matthew Spencer" description="Experience coming soon.">
-  <div class="max-w-6xl mx-auto px-4 py-16">
+<BaseLayout title="Experience — Matthew Spencer" description="My professional journey as a developer.">
+  <div class="max-w-4xl mx-auto px-6 py-16">
+
+    <!-- Header -->
     <div class="mb-12">
-      <h1 class="text-4xl font-bold text-white mb-3">Experience</h1>
-      <p class="text-gray-400 text-lg">Coming soon.</p>
+      <p class="text-xs font-mono uppercase tracking-widest text-accent-400 mb-2">Career</p>
+      <h1 class="text-4xl font-bold text-white mb-3">Professional Journey</h1>
+      <p class="text-gray-400">My experience and growth as a developer.</p>
     </div>
+
+    <!-- Job entries -->
+    <div class="flex flex-col gap-6">
+      {jobs.map(job => (
+        <div class="rounded-xl border border-gray-800 bg-gray-900 p-6">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-4">
+            <div>
+              <h2 class="text-lg font-semibold text-white">{job.company}</h2>
+              <p class="text-accent-400 text-sm">{job.title}</p>
+            </div>
+            <span class="text-sm text-gray-500 font-mono whitespace-nowrap">{job.range}</span>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">{job.description}</p>
+          <ul class="flex flex-col gap-2">
+            {job.highlights.map(point => (
+              <li class="flex items-start gap-2 text-sm text-gray-400">
+                <span class="text-accent-400 shrink-0 mt-0.5">▹</span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
   </div>
 </BaseLayout>
