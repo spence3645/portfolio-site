@@ -9,10 +9,12 @@ interface Props {
 const { project, href } = Astro.props;
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+const isExternal = href.startsWith('http');
 ---
 
 <a
   href={href}
+  {...isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {}}
   class="group block rounded-xl overflow-hidden border border-gray-800 bg-gray-900 hover:border-accent-600 transition-all duration-200 hover:shadow-lg hover:shadow-accent-900/20"
 >
   <!-- GIF preview -->

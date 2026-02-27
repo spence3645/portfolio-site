@@ -2,14 +2,13 @@ import type { Project } from '../types/project';
 
 export const gamedevProjects: Project[] = [
   {
-    slug: 'example-game',
-    title: 'Example Game',
-    tagline: 'A placeholder game project — replace with your own.',
-    description:
-      'This is a placeholder description for your game project. ' +
-      'Update this file at src/data/gamedev-projects.ts to add your real projects.',
+    slug: 'candy-cutter',
+    title: 'Candy Cutter',
+    tagline: 'An addicting idle game where the goal is to grow your candy cutting empire.',
+    description: 'An addicting idle game where the goal is to grow your candy cutting empire.',
     previewGif: '/media/gamedev/example-game.gif',
     techStack: ['Unity', 'C#'],
+    liveUrl: 'https://apps.apple.com/us/app/candy-cutter/id6478093548',
     repoUrl: 'https://github.com/spence3645',
     order: 1,
     published: true,
