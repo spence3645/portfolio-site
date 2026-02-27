@@ -3,24 +3,44 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const jobs = [
   {
-    company: 'Company Name',
-    title: 'Job Title',
-    range: 'Month Year – Present',
-    description: 'Brief overview of your role and the work you did here.',
+    company: 'Capital One',
+    location: 'Wilmington, DE',
+    title: 'Senior Data Engineer',
+    range: 'Apr 2025 – Present',
     highlights: [
-      'Key accomplishment or responsibility.',
-      'Another highlight or impact you made.',
-      'A third bullet point about your work.',
+      'Designed and implemented scalable data platform enhancements supporting enterprise-level Capital One/Discover data migrations across multiple systems.',
+      'Performed benchmark analysis to identify performance bottlenecks and delivered optimizations that reduced ETL processing time by 95% while increasing supported file sizes by 10×.',
+      'Selected and leveraged an existing enterprise data quality platform to validate and cleanse incoming Discover datasets, reducing downstream operational toil and reprocessing during migration efforts.',
+      'Architected a GenAI-powered schema mapping assistant using LLM prompting workflows, reducing manual data onboarding efforts and earning top-3 recognition across 110 teams in a hackathon.',
+      'Strengthened application security by modernizing legacy code paths and ensuring compliance with Capital One security controls.',
+      'Championed enterprise standards adoption, lowering future maintenance costs.',
     ],
   },
   {
-    company: 'Previous Company',
-    title: 'Previous Role',
-    range: 'Month Year – Month Year',
-    description: 'Brief overview of this position and what you contributed.',
+    company: 'JPMorgan Chase',
+    location: 'Wilmington, DE',
+    title: 'Data Engineer',
+    range: 'Nov 2023 – Apr 2025',
     highlights: [
-      'Notable achievement or project.',
-      'Responsibility or skill you developed.',
+      'Designed and migrated legacy ETL pipelines to the cloud using Amazon EMR clusters, leveraging PySpark to enhance performance.',
+      'Optimized and refactored our legacy Scala codebase over to Python, improving efficiency and maintainability, resulting in a 60% reduction in runtime.',
+      'Led the development of a new data ingestion pipeline, enabling the first adoption of Databricks UniForm data in the cloud within the organization.',
+      'Worked with cross-functional teams to implement shared logic for data processing, enabling a standardized solution across teams and improving overall developer efficiency.',
+      'Facilitated knowledge transfer sessions on our cloud-based solutions for downstream teams, enabling faster delivery of their own solutions.',
+    ],
+  },
+  {
+    company: 'The Vanguard Group',
+    location: 'Malvern, PA',
+    title: 'Application Engineer',
+    range: 'April 2021 – June 2023',
+    highlights: [
+      'Acted as the primary product owner for our Payment Request Form application which processes invoices exceeding a million dollars and resides on Oracle\'s Visual Builder platform.',
+      'Led a team of 4 developers in a modernization initiative to transition our Oracle integrations (OIC) to AWS.',
+      'Used Python to mass update contracts, purchase orders and other types of financial documents saving our clients over 100+ hours.',
+      'Maintained quality of staging environments including the automation of realistic data syncing from production environments using Java Selenium.',
+      'Supported production issues, coordinating with banks and other vendors to resolve issues and implement enhancements.',
+      'Achieved Security Champion 2 by taking company provided application security courses and being shadowed during SARs (Security Assessment Reviews).',
     ],
   },
 ];
@@ -44,10 +64,10 @@ const jobs = [
             <div>
               <h2 class="text-lg font-semibold text-white">{job.company}</h2>
               <p class="text-accent-400 text-sm">{job.title}</p>
+              <p class="text-gray-500 text-xs mt-0.5">{job.location}</p>
             </div>
             <span class="text-sm text-gray-500 font-mono whitespace-nowrap">{job.range}</span>
           </div>
-          <p class="text-gray-300 text-sm leading-relaxed mb-4">{job.description}</p>
           <ul class="flex flex-col gap-2">
             {job.highlights.map(point => (
               <li class="flex items-start gap-2 text-sm text-gray-400">
