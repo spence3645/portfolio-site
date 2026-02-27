@@ -1,11 +1,9 @@
 ---
-import { skillCategories } from '../../data/skills';
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
-const allSkills = skillCategories.flatMap(cat => cat.skills);
 ---
 
-<section class="max-w-4xl mx-auto px-6 py-16 lg:py-24">
+<section class="max-w-4xl mx-auto px-6 py-8 lg:py-14">
   <div class="flex flex-col items-center text-center">
 
     <!-- Avatar -->
@@ -60,23 +58,11 @@ const allSkills = skillCategories.flatMap(cat => cat.skills);
     </div>
 
     <!-- Bio -->
-    <p class="text-gray-300 leading-relaxed max-w-2xl mb-12">
+    <p class="text-gray-300 leading-relaxed max-w-2xl">
       I build things for the web and for games. Passionate about clean code,
       interesting rendering problems, and shipping projects that actually work.
       Currently looking for new opportunities.
     </p>
-
-    <!-- Tech Stack -->
-    <div class="w-full border-t border-gray-800 pt-10">
-      <p class="text-xs font-mono uppercase tracking-widest text-accent-400 mb-6">Tech Stack</p>
-      <div class="flex flex-wrap justify-center gap-2">
-        {allSkills.map(skill => (
-          <span class="px-3 py-1.5 rounded-lg text-sm font-medium bg-gray-800 text-gray-200 border border-gray-700 hover:border-accent-600 hover:text-accent-300 transition-colors">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
 
   </div>
 </section>
