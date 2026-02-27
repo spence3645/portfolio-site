@@ -14,16 +14,4 @@ export const gamedevProjects: Project[] = [
     order: 1,
     published: true,
   },
-  {
-    slug: 'chippys-golf',
-    title: "Chippy's Golf",
-    tagline: "A Game Jam project where I had to develop a spooky game in a week.",
-    description: "A Game Jam project where I had to develop a spooky game in a week.",
-    previewGif: 'media/gamedev/chippys-golf.gif',
-    techStack: ['Unity', 'C#'],
-    year: 2023,
-    liveUrl: 'https://spence3645.itch.io/chippys-golf',
-    order: 2,
-    published: true,
-  },
 ];
