@@ -15,6 +15,7 @@ const jobs = [
       'Strengthened application security by modernizing legacy code paths and ensuring compliance with Capital One security controls.',
       'Championed enterprise standards adoption, lowering future maintenance costs.',
     ],
+    skills: ['Python', 'PySpark', 'SQL', 'AWS', 'ETL', 'GenAI / LLMs', 'Data Quality', 'Data Migration']
   },
   {
     company: 'JPMorgan Chase',
@@ -28,6 +29,7 @@ const jobs = [
       'Worked with cross-functional teams to implement shared logic for data processing, enabling a standardized solution across teams and improving overall developer efficiency.',
       'Facilitated knowledge transfer sessions on our cloud-based solutions for downstream teams, enabling faster delivery of their own solutions.',
     ],
+    skills: ['Python', 'PySpark', 'Scala', 'Amazon EMR', 'Databricks', 'SQL', 'AWS', 'ETL']
   },
   {
     company: 'The Vanguard Group',
@@ -42,6 +44,7 @@ const jobs = [
       'Supported production issues, coordinating with banks and other vendors to resolve issues and implement enhancements.',
       'Achieved Security Champion 2 by taking company provided application security courses and being shadowed during SARs (Security Assessment Reviews).',
     ],
+    skills: ['Python', 'Java', 'Selenium', 'Oracle Visual Builder', 'Oracle OIC', 'AWS']
   },
 ];
 ---
@@ -68,7 +71,7 @@ const jobs = [
             </div>
             <span class="text-sm text-gray-500 font-mono whitespace-nowrap">{job.range}</span>
           </div>
-          <ul class="flex flex-col gap-2">
+          <ul class="flex flex-col gap-2 mb-5">
             {job.highlights.map(point => (
               <li class="flex items-start gap-2 text-sm text-gray-400">
                 <span class="text-accent-400 shrink-0 mt-0.5">▹</span>
@@ -76,6 +79,13 @@ const jobs = [
               </li>
             ))}
           </ul>
+          <div class="flex flex-wrap gap-1.5 pt-4 border-t border-gray-800">
+            {job.skills.map(skill => (
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-gray-800 text-gray-300 border border-gray-700">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       ))}
     </div>
