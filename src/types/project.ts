@@ -5,6 +5,7 @@ export interface Project {
   description: string; // Full text on the detail page
   previewGif: string;  // Path relative to /public
   techStack: string[];
+  year?: number;
   liveUrl?: string;
   repoUrl?: string;
   order: number;
