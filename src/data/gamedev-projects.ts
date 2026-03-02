@@ -7,7 +7,7 @@ export const gamedevProjects: Project[] = [
     tagline: 'IN PROGRESS: A solo developed coop game that emphasizes chaos, made for PC',
     description: 'A chaotic co-op PC game currently in alpha, built solo from the ground up. Responsibilities span core gameplay systems, real-time multiplayer networking via FishNet, and original 3D asset creation in Blender — all under NDA.',
     previewGif: 'media/gamedev/project_chaos.gif',
-    techStack: ['Unity', 'C#', 'Multiplayer', 'Networking', 'Blender', '3D Art'],
+    techStack: ['Unity', 'C#', 'Multiplayer', 'Blender (3D Modeling)'],
     year: 2026,
     order: 1,
     published: true,
