@@ -4,7 +4,7 @@ export const gamedevProjects: Project[] = [
   {
     slug: 'redacted-title',
     title: 'Project Chaos',
-    tagline: 'IN PROGRESS: A 3D chaotic extraction-esque game for PC — solo developed from gameplay to networking to 3D art',
+    tagline: 'IN PROGRESS: A solo developed coop game that emphasizes chaos, made for PC',
     description: 'A chaotic co-op PC game currently in alpha, built solo from the ground up. Responsibilities span core gameplay systems, real-time multiplayer networking via FishNet, and original 3D asset creation in Blender — all under NDA.',
     previewGif: 'media/gamedev/project_chaos.gif',
     techStack: ['Unity', 'C#', 'Multiplayer', 'Networking', 'Blender', '3D Art'],
