@@ -10,7 +10,7 @@ export const gamedevProjects: Project[] = [
     techStack: ['Unity', 'C#', 'FishNet', 'Blender'],
     year: 2026,
     order: 1,
-    published: false,
+    published: true,
   },
   {
     slug: 'candy-cutter',
