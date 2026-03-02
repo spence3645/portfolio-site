@@ -2,8 +2,8 @@ import type { Project } from '../types/project';
 
 export const gamedevProjects: Project[] = [
   {
-    slug: 'unannounced-coop-title',
-    title: 'Unannounced Co-op Title',
+    slug: 'redacted-title',
+    title: '[REDACTED] Title',
     tagline: 'A chaotic multiplayer co-op game for PC — solo developed from gameplay to networking to 3D art.',
     description: 'A chaotic co-op PC game currently in alpha, built solo from the ground up. Responsibilities span core gameplay systems, real-time multiplayer networking via FishNet, and original 3D asset creation in Blender — all under NDA.',
     previewGif: 'media/gamedev/unannounced_coop.gif',
