@@ -2,15 +2,15 @@ import type { Project } from '../types/project';
 
 export const softwareProjects: Project[] = [
   {
-    slug: 'example-app',
-    title: 'Example App',
-    tagline: 'A placeholder software project — replace with your own.',
+    slug: 'dynamic-weather-page',
+    title: 'Dynamic Weather Page',
+    tagline: 'Claude-generated SVG weather display, unique on every refresh.',
     description:
-      'This is a placeholder description for your software project. ' +
-      'Update this file at src/data/software-projects.ts to add your real projects.',
-    previewGif: 'media/software/example-app.gif',
-    techStack: ['TypeScript', 'React', 'Node.js'],
-    repoUrl: 'https://github.com/spence3645',
+      'A Claude generated SVG weather display (different on every refresh) based on the weather in Philadelphia, PA.',
+    previewGif: 'media/software/dynamic-weather-page.gif',
+    techStack: ['Claude', 'GenAI', 'Vercel', 'Prompt Engineering'],
+    liveUrl: 'https://dynamic-weather-page-are8rpwxc-spence3645-9582s-projects.vercel.app/',
+    repoUrl: 'https://github.com/spence3645/dynamic-weather-page',
     order: 1,
     published: true,
   },

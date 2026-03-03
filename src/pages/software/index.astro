@@ -25,7 +25,7 @@ const published = softwareProjects
         {published.map((project) => (
           <ProjectCard
             project={project}
-            href={`${base}software/${project.slug}/`}
+            href={project.liveUrl ?? `${base}software/${project.slug}/`}
           />
         ))}
       </div>
